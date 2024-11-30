@@ -1,0 +1,158 @@
+{
+
+//     "logo": {
+//         // "type": "small",
+//         "padding": {
+//             "top":      3,
+//             "right":    5,
+//             "left":     5,
+//         },
+//     },
+
+    "display": {
+        // "separator": " -> ",
+        // "separator": " -> ",
+        // "separator": " = ",
+        // "separator": " : ",
+        // "separator": "   ",
+        // "separator": " 黎 ",
+        // "separator": " 󰶻  ", 
+        "separator": " ⭘ ",
+        "color": {
+            "separator":    "33",
+        },
+    },
+
+    "modules": [
+        
+        {
+            "type":     "title",
+            "key":   "      USER",
+        },
+
+        {
+            "type":     "custom",
+            "format": " {#90}  {#31}  {#32}  {#96}  {#34}  {#35}  {#36}  {#37}  {#33}  {#39} ",    
+        },
+        "break",
+
+        {
+            "type":     "custom",
+            "format":   "{#35}╭ オペレーティング·システム",
+        },       
+        
+        {
+            "type":     "os",
+            "key":      "{#35}╰┬ {#90}󰣇  {#37}DISTRO",
+            "format":   "{#36}{3} {10}{12}"
+        },
+
+        {
+            "type":     "kernel",
+            "key":      " {#35}├ {#90}  {#37}KERNEL",
+            "format":   "{#39}{1} {2}"
+        },
+
+        {
+            "type":     "shell",
+            "key":      " {#35}├ {#90}  {#37}SHELL",
+            "format":   "{#39}{3} {4}"
+        },
+        
+        {
+            "type":     "packages",
+            "key":      " {#35}├ {#90}  {#37}PACKAGES",
+            "format":   "{#39}{2} (pacman)"
+        },
+        
+        {
+            "type":     "uptime",
+            "key":      " {#35}╰ {#90}  {#37}UPTIME",
+            "format":   "{#39}{1} days {2} hours {3} mins"
+        },
+        "break",
+
+        {
+            "type":     "custom",
+            "format":   "{#35}╭ 設定",
+        },       
+        
+        {
+            "type":     "terminal",
+            "key":      "{#35}╰┬ {#90}  {#37}TERMINAL",
+            "format":   "{#36}{5} {6}"
+        },
+         
+        {
+            "type":     "wm",
+            "key":      " {#35}├ {#90}  {#37}WM",
+            "format":   "{#39}{2} ({3})"
+        },
+        
+        {
+            "type":     "display",
+            "key":      " {#35}╰ {#90}  {#37}RESOLUTION",
+            "format":   "{#39}{1}x{2} @ {3}Hz in {12}' [{7}]"
+        },
+        "break",
+
+        {
+            "type":     "custom",
+            "format":   "{#35}╭ ハードウェア",
+        },       
+        
+        {
+            "type":     "host",
+            "key":      "{#35}╰┬ {#90}󰯉  {#37}PC HOST",
+            "format":   "{#36}{2} ({3})"
+        },
+        
+        {
+            "type":     "cpu",
+            "key":      " {#35}├ {#90}  {#37}CPU",
+            "format":   "{#39}{1} ({5}) @ {7}",
+        },
+        
+        {
+            "type":     "gpu",
+            "key":      " {#35}├ {#90}  {#37}GPU",
+            "format":   "{#39}{1} {6} ({5}) @ {12}",
+        },
+        
+        {
+            "type":     "memory",
+            "key":      " {#35}├ {#90}  {#37}MEMORY",
+            "format":   "{#39}{1} / {2} ({3})",
+        },
+        
+        {
+            "type":     "disk",
+            "key":      " {#35}├ {#90}󰋊  {#37}DISK",
+            "format":   "{#39}{1} / {2} ({3}) - {9}",
+        },
+        
+        {
+            "type":     "custom",
+            "format":   " {#35}├╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴╴",
+        },
+
+        {
+            "type":     "swap",
+            "key":      " {#35}├ {#90}󱡂  {#37}SWAP",
+            "format":   "{#36}{1} / {2} {#39}({3})",
+        },
+
+        {
+            "type":     "localip",
+            "key":      " {#35}├ {#90}󱦂  {#37}LOCAL",
+            "format":   "{#39}{1}",
+        },
+        
+        {
+            "type":     "battery",
+            "key":      " {#35}╰ {#90}󰂀  {#37}BATTERY",
+            "format":   "{#39}{4}  [{5}]",
+        },
+        
+    ]
+}
